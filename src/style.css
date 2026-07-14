@@ -1,0 +1,232 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+
+body {
+  margin: 0 auto;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+}
+
+.phone {
+  background: #1c1c1e;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  block-size: 100%;
+  box-shadow: 0 0 40px rgba(255,255,255,0.05);
+  block-size: 100vh;
+  inline-size: 100%;
+  max-block-size: 1440px;
+  max-inline-size: 430px;
+  min-block-size: 300px;
+  min-inline-size: 375px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 14px 4px 8px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  color: #ffc02e;
+  font-size: 22px;
+  font-weight: 400;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.back-btn svg { margin-right: 2px; }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #ffc02e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+/* хз зачем это, без этого лучше 
+.share-highlight {
+  border: 2px solid #ff3040;
+  border-radius: 8px;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 0 1px rgba(255,48,64,0.15);
+} */
+
+.note-meta {
+  text-align: center;
+  color: #8e8e93;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  letter-spacing: 0.1px;
+}
+
+.note-body {
+  flex-grow: 1;
+  padding: 2px 16px 0 16px;
+  overflow-y: auto;
+}
+
+.note-title-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.note-title-line .word {
+  color: #f2f2f2;
+  /* font-size: clamp(1rem, 0.69rem + 1.31vw, 1.875rem); */
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.lock-emoji {
+  font-size: 19px;
+  filter: grayscale(15%) brightness(0.95);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 22px 22px 22px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.toolbar button {
+  background: none;
+  border: none;
+  color: #ffc02e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.home-indicator {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 134px;
+  height: 5px;
+  background: #fff;
+  border-radius: 3px;
+  opacity: 0.9;
+}
+
+svg { display: block; }
