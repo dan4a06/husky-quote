@@ -1,0 +1,20 @@
+.body {
+  flex-grow: 1;
+  padding: 2px 16px 0 16px;
+  overflow-y: auto;
+}
+
+.titleLine {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.titleLine .word {
+  color: #f2f2f2;
+  font-size: clamp(18px, calc(5.569px + 4.144vh), 48px); /* https://clampcalculator.com/ */
+  font-weight: 600;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}

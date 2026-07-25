@@ -1,0 +1,24 @@
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+}
+
+.phone {
+  background: #1c1c1e;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(255,255,255,0.05);
+  block-size: clamp(300px, 100dvh, 1024px);
+  block-size: clamp(300px, 100vh, 1024px);
+  inline-size: clamp(320px, 100%, 430px);
+  flex-shrink: 0;
+}
+
+svg { display: block; }

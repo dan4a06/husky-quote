@@ -1,0 +1,36 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 14px 4px 8px;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  color: #ffc02e;
+  font-size: 22px;
+  font-weight: 400;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.back-btn svg { margin-right: 2px; }
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  color: #ffc02e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}

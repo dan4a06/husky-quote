@@ -1,6 +1,8 @@
+import s from './Toolbar.module.css'
+
 const Toolbar = () => {
   return (
-    <div className="toolbar">
+    <div className={s.toolbar}>
         <button aria-label="delete">
           <svg width="20" height="22" viewBox="0 0 20 22" fill="none">
             <path d="M1 5h18" stroke="#ffc02e" strokeWidth="1.6" strokeLinecap="round"/>
