@@ -17,7 +17,7 @@
   box-shadow: 0 0 40px rgba(255,255,255,0.05);
   block-size: clamp(300px, 100dvh, 1024px);
   block-size: clamp(300px, 100vh, 1024px);
-  inline-size: clamp(320px, 100%, 430px);
+  inline-size: clamp(320px, 100%, 460px);
   flex-shrink: 0;
 }
 

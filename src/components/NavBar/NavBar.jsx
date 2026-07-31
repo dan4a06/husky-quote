@@ -1,6 +1,9 @@
 import s from './NavBar.module.css'
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const {
+    handleClick
+  } = props
  return (
   <div className={s.bar}>
     <button className={s.backBtn}>
@@ -20,7 +23,7 @@ const NavBar = () => {
         </svg>
       </button>
 
-      <button className={s.iconBtn} aria-label="share">
+      <button className={s.iconBtn} onClick={handleClick} aria-label="share">
         <svg width="19" height="22" viewBox="0 0 19 22" fill="none">
           <path d="M9.5 1v13" stroke="#ffc02e" strokeWidth="1.6" strokeLinecap="round"/>
           <path d="M4.5 6L9.5 1L14.5 6" stroke="#ffc02e" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
